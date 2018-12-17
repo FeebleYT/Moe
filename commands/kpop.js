@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
         message.member.voiceChannel.join()
           .then(connection => {
             let embed = new Discord.RichEmbed()
-            .setDescription('Connected! Playing listen.moe KPOP.')
+            .setDescription('**Connected!** Playing listen.moe KPOP.')
             .setColor('#A65EA5')
             connection.playArbitraryInput(`https://listen.moe/kpop/opus`);
             message.channel.send(embed);

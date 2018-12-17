@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
         message.member.voiceChannel.join()
           .then(connection => {
             let embed = new Discord.RichEmbed()
-            .setDescription('Connected! Playing qtradio.moe')
+            .setDescription('**Connected!** Playing qtradio.moe')
             .setColor('#A65EA5')
             connection.playArbitraryInput(`https://qtradio.moe/stream`);
             message.channel.send(embed);

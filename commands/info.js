@@ -16,6 +16,7 @@ exports.run = (client, message, args) => {
     .addField('__Memory Usage__', `${Math.round(process.memoryUsage().heapUsed / 1024 / 1024)}MB`, true)
     .addField('__Prefix__', `\`${config.prefix}\``, true)
     .addField('__Developer__', '<@484765734803734540>', true)
+    .addField('__Moe\'s Links__', '[Website](https://etcroot.pw/moe/) | [Github](https://github.com/MoeRadio) | [Invite](https://discordapp.com/api/oauth2/authorize?client_id=523779990798598167&permissions=8&scope=bot) | [Support](https://discord.gg/M6hRKwF)', false)
     .setFooter('Moe | By: etcroot#7884')
     .setColor('#A65EA5')
     return message.channel.send(embed);
