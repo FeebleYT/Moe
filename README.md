@@ -1,7 +1,4 @@
 # Moe-
-[![Discord Bots](https://discordbots.org/api/widget/status/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
-[![Discord Bots](https://discordbots.org/api/widget/servers/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
-[![Discord Bots](https://discordbots.org/api/widget/lib/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
 
 Code is very messy but oh well.
 
@@ -39,3 +36,7 @@ pm2 start moe.js
 pm2 restart moe.js
 pm2 stop moe.js
 ```
+
+[![Discord Bots](https://discordbots.org/api/widget/status/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
+[![Discord Bots](https://discordbots.org/api/widget/servers/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
+[![Discord Bots](https://discordbots.org/api/widget/lib/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
