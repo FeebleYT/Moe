@@ -2,6 +2,7 @@
 [![Discord Bots](https://discordbots.org/api/widget/status/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
 [![Discord Bots](https://discordbots.org/api/widget/servers/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
 [![Discord Bots](https://discordbots.org/api/widget/lib/523779990798598167.svg)](https://discordbots.org/bot/523779990798598167)
+
 Code is very messy but oh well.
 
 https://discord.gg/M6hRKwF
