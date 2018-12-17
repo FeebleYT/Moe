@@ -5,8 +5,6 @@ exports.run = (client, message, args) => {
     let embed = new Discord.RichEmbed()
     .setTitle('__Moe Help Menu__')
     .setColor('#A65EA5')
-    .setThumbnail(client.user.displayAvatarURL)
-    .setFooter('Moe | By: etcroot#7884')
     .setDescription([`
     All commands uses \`${config.prefix}\` as prefix.
     You can read more about commands & how to use them [here](https://etcroot.pw/moe/cmds/).
