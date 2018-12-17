@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
     let embed = new Discord.RichEmbed()
-    .setTitle('__Moe Help Menu__')
+    .setAuthor(`${client.user.username}'s Help Menu`, client.user.displayAvatarURL)
     .setColor('#A65EA5')
     .setDescription([`
     All commands uses \`${config.prefix}\` as prefix.
