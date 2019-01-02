@@ -1,11 +1,12 @@
-const Discord = require("discord.js");
+const { Client, RichEmbed } = require("discord.js");
 const ffmpeg = require("ffmpeg-binaries");
 const opusscript = require("opusscript");
-const client = new Discord.Client();
+const client = new Client();
 const fs = require("fs");
 const config = require("./config.json");
 const dbl = require("dblposter");
 const poster = new dbl("DBL TOKEN", client);
+
 poster.bind();
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
@@ -16,9 +17,11 @@ fs.readdir("./events/", (err, files) => {
   });
 });
 
-client.on('message', async message => {
-  if(message.content.toLowerCase() === `<@${client.user.id}>`){
-    const embed = new Discord.RichEmbed()
+client.on("message", message => {
+  if (message.author.bot) return;
+  if (!message.guild) return;
+    if(message.content.toLowerCase() === `<@${client.user.id}>`){
+    const embed = new RichEmbed()
     .setTitle(`__Moe's Prefix & Help__`)
     .setDescription([`
     Use \`${config.prefix}help\` to get all my commands.
@@ -26,10 +29,6 @@ client.on('message', async message => {
     .setColor('#A65EA5')
     return message.channel.send(embed);
   }
-});
-
-client.on("message", message => {
-  if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
