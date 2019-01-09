@@ -2,7 +2,7 @@ const { RichEmbed } = require("discord.js");
 const { get } = require("axios");
 
 exports.run = async (client, message, args) => {
-const data = await body('https://qtradio.moe/stats', { 'User-Agent': `moe/latest/bot` }); //Partially ported from qtradio desktop app
+const data = await get('https://qtradio.moe/stats', { 'User-Agent': `moe/latest/bot` }); //Partially ported from qtradio site/desktop app
 let data = body.data.icestats.source[0];
 if (data === undefined) data = body.data.icestats.source;
 const nowPlaying = { artist: data.artist, title: data.title };
