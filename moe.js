@@ -20,7 +20,7 @@ fs.readdir("./events/", (err, files) => {
 client.on("message", message => {
   if (message.author.bot) return;
   if (!message.guild) return;
-    if(message.content.toLowerCase() === `<@${client.user.id}>`){
+    if(message.content.toLowerCase() === `<@${client.user.id}>` || message.content.toLowerCase() === `<@!${client.user.id}>`) {
     const embed = new RichEmbed()
     .setTitle(`__Moe's Prefix & Help__`)
     .setDescription([`
