@@ -4,10 +4,7 @@ const opusscript = require("opusscript");
 const client = new Client();
 const fs = require("fs");
 const config = require("./config.json");
-const dbl = require("dblposter");
-const poster = new dbl("DBL TOKEN", client);
 
-poster.bind();
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
